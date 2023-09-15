@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon/inicio.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Página inicial</title>
+</head>
+<body>
+    
+    <header>
+        <h1> Dev__<span>_Karlos_</span>__ </h1>
+            <nav >
+               <ul aria-label="Navegação primaria" class="navegacao-primaria">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="resumo.html">Resumo</a></li>
+                    <li><a href="sobre.html" >Sobre</a></li>
+                    <li><a href="Habilidades.html">Habilidades</a></li>
+                    <li><a href="jogos.html">Jogos</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="contatos.html">Contato</a></li>
+               </ul>
+            </nav>
+           
+    </header>
+   
+    <article class="section-div">
+        <div>
+            <h2 class="texto01">Quem sou eu?</h2>
+            <h3 class="Digitando">Sou desenvolvedor Web com HTML, CSS, JV </h3>
+                <p class="texto-sobre">Olá! Meu nome é José Carlos da Silva e sou um entusiasta de tecnologia e apaixonado por Programação.   Tenho formação 
+                    técnica em Programação de Jogos Digitais pelo IFRN, e atualmente cursando graduação em Tecnologia da Informação pela UFRN.
+                    Fora do mundo tecnológico, pratico esportes como futebol, frequento academia regularmente, visando alcançar o equilíbrio entre mente e
+                    corpo.
+                </p> 
+            <a href="curriculo/Currriculo.pdf" download="curriculo_karlos" target="_blank">Dowload currículo</a>
+        </div>
+            <picture>
+                <img src="img/EU.jpg" alt="eu" title="foto:josé carlos" width="700px">  
+            </picture>
+    </article>
+ 
+<script>
+    function writeTitle(){
+        function activeWorld(element){
+            const arrText = element.innerHTML.split('');
+            element.innerHTML = '';
+             arrText.forEach((letra, i) =>{
+            setTimeout(()=>{
+            element.innerHTML += letra; }, 80 * i);})}
+            
+    const title = document.querySelector('.Digitando');
+    activeWorld(title);
+}writeTitle();
+
+</script>
+       
+</body>
+</html>
