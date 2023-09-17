@@ -1,0 +1,8 @@
+.sobre{
+    justify-self:start;
+    display: flex;
+    color: #ff0019;
+    border-radius: 5px;
+    padding: 15px 44px;
+    border: 6px solid red;
+}
